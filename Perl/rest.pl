@@ -12,6 +12,7 @@ initscr();
 noecho();
 
 getmaxyx( my $mrow, my $mcol );
+box( ACS_VLINE, ACS_HLINE );
 
 while (my $gc  = getch()) {
 
@@ -29,7 +30,6 @@ while (my $gc  = getch()) {
 }
 
 
-getch();
 endwin();
 system("tput cnorm");
 exit(0);
